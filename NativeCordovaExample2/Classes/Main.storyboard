@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jPc-7c-OUH">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Home-->
+        <scene sceneID="rTN-gV-Eed">
+            <objects>
+                <viewController id="44n-EZ-8bq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="odJ-gy-LKG"/>
+                        <viewControllerLayoutGuide type="bottom" id="bXc-qe-gCd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i2p-Bf-ZhV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obC-V8-QZ8">
+                                <rect key="frame" x="96" y="215" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="I'm a native button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="9SL-uN-adw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JfV-Xl-yTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="-341"/>
+        </scene>
+        <!--Ionic View Controller - Cordova-->
+        <scene sceneID="Odi-5c-tXn">
+            <objects>
+                <viewController id="K1q-hY-4ag" customClass="IonicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ASn-4g-Q1V"/>
+                        <viewControllerLayoutGuide type="bottom" id="hXl-iV-nJT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0S6-ar-TYH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cordova" image="icon-40.png" id="X1p-WK-8iv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suE-Nl-0UW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760" y="330"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jLT-8j-q6P">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jPc-7c-OUH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5KR-Io-Xkq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="44n-EZ-8bq" kind="relationship" relationship="viewControllers" id="pwh-Bo-qdw"/>
+                        <segue destination="K1q-hY-4ag" kind="relationship" relationship="viewControllers" id="J5E-Mr-J8e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfV-Xe-x4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="-81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home.png" width="32" height="32"/>
+        <image name="icon-40.png" width="40" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
